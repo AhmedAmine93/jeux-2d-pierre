@@ -1,0 +1,85 @@
+.input-group-text{
+    width: 150px;
+}
+button:focus {
+    outline: none !important;
+}
+.new {
+display:  flex;
+width: 100%;
+justify-content: space-between;
+}
+
+.dashboard-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.score > p:first-child {
+    padding: 8px;
+    background: #78c2ad;
+    color: #f1f1f1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.score > p:last-child {
+    padding: 8px;
+    background: #333;
+    color: #f1f1f1;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.choices {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+.choices > i {
+    width: 33.3333%;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 12px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.choices > i:hover {
+    color: #78c2ad;
+}
+.choice.disable {
+    pointer-events: none;
+}
+.choice.chosen {
+    color: #f3969a;
+}
+#message {
+    color: #78c2ad;
+    font-size: 48px;
+    font-weight: 600;
+    margin:20px;
+    text-align: center;
+}
+.avatar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    
+}
+.avatar img {
+    width: 40px;
+    height: 40px;
+}
+.avatar span {
+    font-weight: 700;
+    
+}

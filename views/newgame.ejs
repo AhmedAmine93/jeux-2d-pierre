@@ -1,0 +1,74 @@
+<div class="container" id="c1">
+	<div class="dashboard-title">
+		<h1>Dashboard</h1>
+		<a href="/logout" class="btn btn-secondary">Logout</a>
+	</div>
+	<div class="avatar">
+		<img src="<%= user.avatar %>" alt="" />
+		<div id="userName">
+			<div>Welcome</div>
+			<span><%= user.name %></span>
+		</div>
+	</div>
+	<p id="userId" style="display: none"><%= user._id%></p>
+	<div class="menu">
+		<div class="how-to">
+			<h3>How To Play</h3>
+			<ol>
+				<li>Player 1: Create a new game</li>
+				<li>Player 2: Enter the room id that is displayed below.</li>
+				<li>Click on join game.</li>
+			</ol>
+		</div>
+
+		<div class="sub-main">
+			<div class="new">
+				<div class="mb-3">
+					<h4>Create a new Game</h4>
+					<button id="newgame" type="button" class="btn btn-primary btn-block">
+						Create
+					</button>
+				</div>
+
+				<div class="join">
+					<h4>Join an existing game</h4>
+					<form class="input-group" onsubmit="return false;">
+						<input
+							type="text"
+							name="room"
+							id="room"
+							class="form-control"
+							placeholder="Enter Game ID"
+							required
+						/>
+						<button
+							class="btn btn-primary btn-block"
+							type="button"
+							id="joingame"
+						>
+							Join Game
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="gameBoard">
+				<h2 id="msg"></h2>
+				<h3 id="turn"></h3>
+
+				<div id="score" class="score">
+					<p><span id="player1Name"></span> : <span id="p1score">0</span></p>
+					<p><span id="player2Name"></span> : <span id="p2score">0</span></p>
+				</div>
+				<div id="message"></div>
+				<div class="gamePlay">
+					<h2>Make your selection</h2>
+					<div class="choices">
+						<i id="Rock" class="choice fas fa-hand-rock fa-10x"></i>
+						<i id="Paper" class="choice fas fa-hand-paper fa-10x"></i>
+						<i id="Scissor" class="choice fas fa-hand-scissors fa-10x"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
